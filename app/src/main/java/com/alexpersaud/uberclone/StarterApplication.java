@@ -5,7 +5,6 @@ import android.util.Log;
 
 import com.parse.Parse;
 import com.parse.ParseACL;
-import com.parse.ParseUser;
 
 /**
  * Created by AlexPersaud on 11/28/2017.
@@ -35,7 +34,7 @@ public class StarterApplication extends Application {
                 .build()
         );
 
-        ParseUser.enableAutomaticUser();
+//        ParseUser.enableAutomaticUser();
         ParseACL defaultACL = new ParseACL();
         defaultACL.setPublicReadAccess(true);
         defaultACL.setPublicWriteAccess(true);
